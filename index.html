@@ -146,7 +146,7 @@ once=1;
 data=JSON.parse(data);
 document.getElementById('index').innerHTML="&nbsp;";//"音乐 [ "+data.index+" ]";
 document.getElementById('status').innerHTML ="&nbsp;";
-document.getElementById('au').src="http://antiserver.kuwo.cn/anti.s?useless=/resource/&format=mp3&rid=MUSIC_4167501&response=res&type=convert_url";
+document.getElementById('au').src="https://gcore.jsdelivr.net/gh/CFITCorporation/cfitpic@main/pic/hello.mp3";
 title=data.title;
 document.getElementById('au').play();document.getElementById('qdzt').src="暂停.gif";
 document.getElementById('dqxh').src="随机播放.gif";
@@ -262,7 +262,7 @@ once=1;
 data=JSON.parse(data);
 document.getElementById('index').innerHTML="&nbsp;";//"音乐 [ "+data.index+" ]";
 document.getElementById('status').innerHTML ="&nbsp;";
-document.getElementById('au').src="http://antiserver.kuwo.cn/anti.s?useless=/resource/&format=mp3&rid=MUSIC_4167501&response=res&type=convert_url";
+document.getElementById('au').src="https://gcore.jsdelivr.net/gh/CFITCorporation/cfitpic@main/pic/hello.mp3";
 title=data.title;
 document.getElementById('qdzt').click();
 document.getElementById('qdzt').click();
@@ -295,7 +295,7 @@ once=1;
 data=JSON.parse(data);
 document.getElementById('index').innerHTML="&nbsp;";//"音乐 [ "+data.index+" ]";
 document.getElementById('status').innerHTML ="&nbsp;";
-document.getElementById('au').src="http://antiserver.kuwo.cn/anti.s?useless=/resource/&format=mp3&rid=MUSIC_4167501&response=res&type=convert_url";
+document.getElementById('au').src="https://gcore.jsdelivr.net/gh/CFITCorporation/cfitpic@main/pic/hello.mp3";
 title=data.title;
 document.getElementById('qdzt').click();
 document.getElementById('qdzt').click();
@@ -307,7 +307,7 @@ document.getElementById('qdzt').click();
 var aud=document.getElementById('au');
 window.onload =function(){
 aud.onloadstart=function(){
-if(document.getElementById('au').src!="http://antiserver.kuwo.cn/anti.s?useless=/resource/&format=mp3&rid=MUSIC_4167501&response=res&type=convert_url")
+if(document.getElementById('au').src!="https://gcore.jsdelivr.net/gh/CFITCorporation/cfitpic@main/pic/hello.mp3")
 {
 
 document.getElementById('status').innerHTML = "播放状态 - 正在连接";
@@ -316,7 +316,7 @@ setTimeout(function(){document.getElementById('status').innerHTML = "播放状�
 }
 }
 aud.onplay=function(){
-if(document.getElementById('au').src!="http://antiserver.kuwo.cn/anti.s?useless=/resource/&format=mp3&rid=MUSIC_4167501&response=res&type=convert_url")
+if(document.getElementById('au').src!="https://gcore.jsdelivr.net/gh/CFITCorporation/cfitpic@main/pic/hello.mp3")
 {
 once=once+1;
 if(once==2){
@@ -327,7 +327,7 @@ document.getElementById('qdzt').src="暂停.gif";
 }
 }
 aud.onpause=function(){
-if(document.getElementById('au').src!="http://antiserver.kuwo.cn/anti.s?useless=/resource/&format=mp3&rid=MUSIC_4167501&response=res&type=convert_url")
+if(document.getElementById('au').src!="https://gcore.jsdelivr.net/gh/CFITCorporation/cfitpic@main/pic/hello.mp3")
 {
 
 document.getElementById('status').innerHTML = "播放状态 - 暂停";
@@ -370,7 +370,7 @@ dqzh.onclick =function()
 {
 if(once>1){
 k=dqzh.src;
-if(document.getElementById('au').src!="http://antiserver.kuwo.cn/anti.s?useless=/resource/&format=mp3&rid=MUSIC_4167501&response=res&type=convert_url")
+if(document.getElementById('au').src!="https://gcore.jsdelivr.net/gh/CFITCorporation/cfitpic@main/pic/hello.mp3")
 {
 if(k.indexOf(encodeURI("单"))>-1){
 dqzh.src="./随机播放.gif";
@@ -442,7 +442,7 @@ aud.volume=ra.value/100;
 }
 new ClipboardJS('#index', {
     text: function(trigger) {  
-     if(aud.src!="http://antiserver.kuwo.cn/anti.s?useless=/resource/&format=mp3&rid=MUSIC_4167501&response=res&type=convert_url")
+     if(aud.src!="https://gcore.jsdelivr.net/gh/CFITCorporation/cfitpic@main/pic/hello.mp3")
     {
     let a=anime({targets:"#cosu",opacity:[0,1],duration:1500,complete:hid}); 
  
@@ -453,7 +453,7 @@ new ClipboardJS('#index', {
 });
 new ClipboardJS('#status', {
     text: function(trigger) {
-       if(aud.src!="http://antiserver.kuwo.cn/anti.s?useless=/resource/&format=mp3&rid=MUSIC_4167501&response=res&type=convert_url")
+       if(aud.src!="https://gcore.jsdelivr.net/gh/CFITCorporation/cfitpic@main/pic/hello.mp3")
     {
     let a=anime({targets:"#cosu",opacity:[0,1],duration:1500,complete:hid}); 
         return title+"\n"+aud.src;
@@ -462,7 +462,7 @@ new ClipboardJS('#status', {
 });
 new ClipboardJS('#iscon', {
     text: function(trigger) {
-       if(aud.src!="http://antiserver.kuwo.cn/anti.s?useless=/resource/&format=mp3&rid=MUSIC_4167501&response=res&type=convert_url")
+       if(aud.src!="https://gcore.jsdelivr.net/gh/CFITCorporation/cfitpic@main/pic/hello.mp3")
     {
     let a=anime({targets:"#cosu",opacity:[0,1],duration:1500,complete:hid}); 
         return title+"\n"+aud.src;
